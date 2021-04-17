@@ -17,26 +17,28 @@ body{
     position:sticky;
     top: 0;left: 0;
     background-color: #fcc314;
-    padding: 0 3rem 0 3rem;
+    padding: 0 1rem 0 1rem;
+    z-index: 2;
 }
-.container{
+.contenedor{
     width: 100%;
     max-width: 100vw;
     display: inline-flex;
+    padding: 0 20px 0 20px;
 }
-.container .btn-menu, .logo{
+.contenedor .btn-menu, .logo{
     float: left;
     line-height:80px;
 }
-.container .btn-menu label{
+.contenedor .btn-menu label{
     color: #fff;
     justify-content: space-evenly;
     cursor: pointer;
 }
-.container .menu{
+.contenedor .menu{
     line-height: 80px;
 }
-.container .menu a{
+.contenedor .menu a{
     padding: 0 10px 0 10px;
     text-decoration: none;
     color:#5e5342 ;
@@ -44,7 +46,7 @@ body{
     border-bottom: 2px solid transparent;
     font-size: 18px;
 }
-.container .menu a:hover{
+.contenedor .menu a:hover{
     border-bottom: 2px solid #5e5342;
     padding-bottom: 5px;
 }
@@ -80,6 +82,7 @@ body{
 /*Menù lateral*/
 #btn-menu{
     display: none;
+    z-index: 2;
 }
 .container-menu{
     position: sticky;
@@ -90,6 +93,7 @@ body{
     transition: all ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 2;
 }
 #btn-menu:checked ~ .container-menu{
     opacity: 1;
@@ -127,38 +131,16 @@ body{
 
 /*Slider Promociones*/
 .slider {
-    width: 100vw;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
-.slider ul{
-    display: flex;
-    width: 500vw;
-    animation: cambio  20s infinite ease-in;
-}
 .slider li{
-    width: 100vw;
     list-style: none;
 }
 .slider img{
-    width: 100%;
+    width: 100vw;
     height: 35vh;
-}
-@keyframes cambio{
-    0%  {margin-left: 0;}
-    15%  {margin-left: 0;}
-
-    20%  {margin-left: -100%;}
-    35%  {margin-left: -100%;}
-
-    40%  {margin-left: -200%;}
-    55%  {margin-left: -200%;}
-
-    60%  {margin-left: -300%;}
-    75%  {margin-left: -300%;}
-
-    80%  {margin-left: -400%;}
-    95%  {margin-left: -400%;}
 }
 /*Fin de Slider Promociones*/
 
@@ -167,50 +149,17 @@ body{
     font-size: 27px;
     text-align:center;
 }
-.select-pet {
-    width: 100%;
-    max-width: 80vw;
-    height: 480px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-}
-.select-pet .select-img{
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
+.card-deck {
+    width: 80%;
+    max-width: 100vw;
     text-align: center;
-    transition: all 0.25s;
+    margin: auto;
+
 }
-.select-pet .select-img:hover{
-    transform: translateY(15px) translateZ(-1);
-    box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
-}
-.select-img img{
+.card img{
     width: 330px;
     height: 220px;
-}
-.select-pet .select-img h1{
-    text-decoration: none;
-    color:#5e5342 ;
-    font-size: 18px;
-    font-weight: 600;
-}
-.select-pet .select-img p{
-    text-decoration: none;
-    color:#5e5342 ;
-    padding: 1rem;
-    font-size: 16px;
-    font-weight: 300;
-}
-.select-pet .select-img a{
-    font-weight: 500;
-    text-decoration: none;
-    color: #3498db;
+    margin-top: 15px;
 }
 /*Fin de Seleccion Mascota*/
 
@@ -228,6 +177,16 @@ body{
     justify-content: center;
     margin: auto;
 }
+@media screen and (max-width:715px){
+    .select-marc{
+        width: 80%;
+        height: 1150px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin: 30px;
+        text-align: center;
+    }
+}
 .select-marc .select-brand{
     width: 50%;
     height: 350px;
@@ -235,6 +194,16 @@ body{
     border-bottom: 1px solid;
     margin: 20px;
     text-align: center;
+}
+@media screen and (max-width:715px){
+    .select-marc .select-brand{
+        width: 80%;
+        height: 1150px;
+        border-top: none;
+        border-bottom: none;
+        margin: 20px;
+        text-align: center;
+    }
 }
 .select-brand img{
     margin: 5px 30px 5px 30px;
@@ -388,18 +357,8 @@ footer{
     text-decoration: none;
     color: #c7c7c7;
     font-weight: bold;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count:infinite;
 }
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 .information a{
     text-decoration: none;
     color: #c7c7c7;
