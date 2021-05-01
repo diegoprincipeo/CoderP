@@ -89,124 +89,59 @@
 </div>
 <!--Fin Menú lateral-->
 
-<!--Inicio Sliders-->
-<div class="slider">
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-		  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-		  <li data-target="#carouselExampleIndicators" data-slide-to="4	"></li>
-		</ol>
-		<div class="carousel-inner">
-		  <div class="carousel-item active" data-interval="3000">
-			<img src="./Foto/Slider1.png" class="d-block wh-100" alt="...">
-		  </div>
-		  <div class="carousel-item" data-interval="3000">
-			<img src="./Foto/Slider2.png" class="d-block wh-100" alt="...">
-		  </div>
-		  <div class="carousel-item" data-interval="3000">
-			<img src="./Foto/Slider3.png" class="d-block wh-100" alt="...">
-		  </div>
-		  <div class="carousel-item" data-interval="3000">
-			<img src="./Foto/Slider4.png" class="d-block wh-100" alt="...">
-		  </div>
-		  <div class="carousel-item" data-interval="3000">
-			<img src="./Foto/Slider5.png" class="d-block wh-100" alt="...">
-		  </div>
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="sr-only">Next</span>
-		</a>
-	  </div>
-</div>
-<!--Fin Sliders-->
+<!--inicio Registro-->
 
-<!--Inicio Selecion Mascota-->
-<h1 class="titulomascota">Tipo de Mascota</h1>
-<div class="card-deck">
-  <div class="card">
-    <a href="./Fullpetsfood_Perro.html"><img src="./Foto/Perro" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title font-weight-bold">Productos para Perros</h5>
-      <p class="card-text font-weight-normal">Aqui encontraras las mejores marcas de comida para perros segun su tamaño y raza, asi como juguetes y productos de higiene.</p>
+<div class="Register">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn ing-pos" onclick="login()">Ingresar</button>
+            <button type="button" class="toggle-btn reg-pos" onclick="register()">Registrarse</button>
+        </div>
+        <form id="login" class="input-group principal-login">
+            <input type="text" class="input-field border form-control" placeholder="Nombre de usuario" required>
+            <input type="password" class="input-field border form-control" placeholder="Constraseña" required>
+			
+            <input type="checkbox" class="chech-box"><span>Recordar Contraseña</span>
+            <button type="submit" class="submit-btn">Ingresar</button>
+			<a href="">Olvide mi contraseña</a>
+			<img src="./Foto/Ingreso Beagle2.png" width="335px">
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field border form-control" placeholder="Nombre de usuario" required>
+            <input type="email" class="input-field border form-control" placeholder="Correo electrónico" required>
+            <input type="password" class="input-field border form-control" minlength="8" placeholder="Ingresar contraseña" required>
+            <input type="password" class="input-field border form-control" minlength="8" placeholder="Confirmar contraseña" required>
+            <input type="checkbox" class="chech-box"><span>Aceptar Terminos & condiciones</span>
+            <button type="submit" class="submit-btn">Registrarse</button>
+			<div class="social-icons">
+				<img src="./Foto/facebook_registro.png">
+				<img src="./Foto/gmail_registro.png">
+				<img src="./Foto/twitter_registro.png">
+			</div>
+		</form>
     </div>
-    <div class="card-footer">
-      <small class="text-muted"><a href="./Fullpetsfood_Perro.html">Ir a Productos</a></small>
-    </div>
-  </div>
-  <div class="card">
-    <a href="./Fullpetsfood_Gato.html"><img src="./Foto/Gato" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title font-weight-bold">Productos para Gatos</h5>
-      <p class="card-text font-weight-normal">Te daremos las mejores marcas para la alimentacion, asi como arena para gatos, juguetes, accesoriso, productos de aseo e higiene.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted"><a href="./Fullpetsfood_Gato.html">Ir a Productos</a></small>
-    </div>
-  </div>
-  <div class="card">
-    <a href="./Fullpetsfood_Otras_mascotas.html"><img src="./Foto/Otras Mascotas" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title font-weight-bold">Productos para Otras Mascotas</h5>
-      <p class="card-text font-weight-normal">Aqui encontraras comida, juguetes y utiles de aseo para Roedores, Aves y Reptiles, asi como algunos productos de higiene y aseo.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted"><a href="./Fullpetsfood_Otras_mascotas.html">Ir a Productos</a></small>
-    </div>
-  </div>
 </div>
-<!--Fin Selecion Mascota-->
 
-<!--Inicio Selecion Marcas-->
-<h1 class="titulomarca" id="titulomarca">Las Marcas que ellos aman</h1>
-<div class="select-marc">
-	<div class="select-brand">
-		<h1>Perros🐕</h1>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp1.jpg" alt=""></a>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp2.jpg" alt=""></a>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp3.jpg" alt=""></a>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp4.jpg" alt=""></a>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp5.jpg" alt=""></a>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp6.jpg" alt=""></a>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp7.jpg" alt=""></a>
-		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp8.jpg" alt=""></a>
-	</div>
-</div>
-<div class="select-marc">
-	<div class="select-brand">
-		<h1>Gatos🐈</h1>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg1.jpg" alt=""></a>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg2.jpg" alt=""></a>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg3.jpg" alt=""></a>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg4.jpg" alt=""></a>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg5.jpg" alt=""></a>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg6.jpg" alt=""></a>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg7.jpg" alt=""></a>
-		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg8.jpg" alt=""></a>
-	</div>
-</div>
-<div class="select-marc">
-		<div class="select-brand">
-		<h1>🦎🐇Otras Mascotas🐦🐟</h1>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom1.jpg" alt=""></a>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom2.jpg" alt=""></a>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom3.jpg" alt=""></a>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom4.jpg" alt=""></a>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom5.jpg" alt=""></a>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom6.jpg" alt=""></a>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom7.jpg" alt=""></a>
-		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom8.jpg" alt=""></a>
-	</div>
-</div>
-</div>
-<!--Fin Sliders-->
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+        x.style.left = "-550px"
+        y.style.left = "8px"
+        z.style.left = "150px"
+    }
+    function login(){
+        x.style.left = "8px"
+        y.style.left = "550px"
+        z.style.left = "0"
+    }
+</script>
+
+<!--Fin Registro-->
+
 
 <!--inicio Ejecutor-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

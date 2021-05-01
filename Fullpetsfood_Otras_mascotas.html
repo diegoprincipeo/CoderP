@@ -7,91 +7,313 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--Inicio Encabezado-->
-	<header class="header">
-		<div class="contenedor">
-		    <div class="btn-menu">
-			    <label for="btn-menu">☰</label>
-		    </div>
-			<div class="logo">
-			<a href="index.html"><img src="Foto/Logo2.png" width="120px" alt=""></a>
-			</div>
-            <div class="box"> 
-                <input type="text" name="Buscar" placeholder="Busca tu comida favorita" class="src" autocomplete="off">
-                <input type="submit" value="Buscar" class="srcb">
-                <input type="reset" value="Limpiar" class="srcb">
-            </div>
-			<nav class="menu">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Mi Cuenta">🐾 Mi Cuenta</a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Carrito">🛒 Carrito</a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Zona de Reparto">🗺️ Zona de Reparto</a>
-            </nav>
+<header class="header">
+	<div class="contenedor">
+		<div class="btn-menu" type="button">
+			<label for="btn-menu"><i class="fas fa-bars"></i></label>
 		</div>
-	</header>
+		<div class="logo">
+		<a href="index.html"><img src="Foto/Logo2.png" width="120px" alt=""></a>
+		</div>
+		<div class="box"> 
+			<input type="text" name="Buscar" placeholder="Busca tu comida favorita" class="src" autocomplete="off">
+			<input type="submit" value="Buscar" class="srcb">
+		</div>
+		<nav class="menu dropdown d-flex justify-content-around">
+			<div>
+				<a href="Fullpetsfood_ingreso.html" data-toggle="tooltip" data-placement="top"><i class="fas fa-user-circle"></i><span>  Mi Cuenta</span></a>
+			</div>
+			<div>
+				<a href="#" type="button" class="btn btn-secondary dropdown-toggle shadow-none bg-transparent" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="top"><i class="fas fa-shopping-basket"></i><span>  Carrito</span></a>
+				<div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+					<table id="lista-carrito" class="table">
+						<thead>
+							<tr>
+								<th>Imagen</th>
+								<th>Nombre</th>
+								<th>Precio</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<a href="#" id="procesar-pedido" class="dropdown-item">Procesar Compra</a>
+					<a href="#" id="vaciar-carrito" class="dropdown-item">Vaciar Carrito</a>
+				</div>
+			</div>
+			<div>
+				<a href="#" type="button" class="btn btn-secondary dropdown-toggle shadow-none bg-transparent" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="top"><i class="fas fa-phone-alt"></i><span>  Contactanos</span></a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item body-dropdown" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/whatsapp-brands.svg" alt="" width="22px"> +51 992862170</a>
+					<a class="dropdown-item body-dropdown" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/envelope-regular.svg" alt="" width="22px"> Fullpetsfood@gmail.com</a>
+					<a class="dropdown-item foot-dropdown">Lunes a sábado 9am-8pm</a>
+					<a class="dropdown-item foot-dropdown">Domingo 9am-2pm</a>
+				</div>
+			</div>
+			<div>
+				<a href="#" type="button" class="btn btn-secondary dropdown-toggle shadow-none bg-transparent" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="top"><i class="fas fa-store-alt"></i><span>  Tiendas</span></a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item head-dropdown" href="Fullpetsfood_zonadereparto.html"><strong>Ver Mapa</strong></a>
+					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Gotica</a>
+					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Metropolis</a>
+					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Central</a>
+					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Costa Oeste</a>
+					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Estrella</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
 <!--Fin Encabezado-->
 
 <!--Inicio Menú lateral-->
 <input type="checkbox" id="btn-menu">
 <div class="container-menu">
-	<div class="cont-menu">
-		<nav>
-			<a href="index.html">Inicio</a>
-			<a href="#titulomarca">Marcas</a>
-			<a href="#">Promociones</a>
-			<a href="#">Ayuda Social</a>
-			<a href="Fullpetsfoos_Nosotros.html">Nosotros</a>
-			<a href="#">Contactanos</a>
-		</nav>
-	</div>
+<div class="cont-menu">
+	<nav>
+		<a href="index.html#titulomarca">Marcas</a>
+		<a href="Fullpetsfood_Perro.html">Promociones</a>
+		<a href="Fullpetsfoos_Nosotros.html">Nosotros</a>
+		<a href="Fullpetsfood_zonadereparto.html">Zona de reparto</a>
+		<a href="https://www.vozanimalperu.com/albergue">Ayuda Social</a>
+		<a href="Fullpetsfood_FAQ.html">Preguntas frecuentes</a>
+	</nav>
+</div>
 </div>
 <!--Fin Menú lateral-->
 
-    <div class="comiseca">
-        <h1>Comida seca</h1>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-    </div>
-    <div class="comihumeda">
-        <h1>Comida humeda</h1>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-    </div>
-    <div class="comisnacks">
-        <h1>Snacks</h1>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-        <div><img src="./Foto/Prueba.jpg" alt=""></div>
-    </div>
+<!--Inicio Fotos Comida-->
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Ricocan</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Ricocan-adulto-12.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">90.00</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+							<li>Adultos</li>
+                            <li>Multisabor</li>
+                            <li>15 kg</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Ricocan</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Ricocan-cachorro-12.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">95</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+							<li>Cachorros</li>
+                            <li>Carne y Leche</li>
+                            <li>15 kg</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Salvaje</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Salvaje-adulto-15.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">118.90</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Adultos</li>
+                            <li>Cordero</li>
+                            <li>15 kg</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Salvaje</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Salvaje-cachorro-15.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">122</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Cachorros</li>
+                            <li>Pollo</li>
+                            <li>15 kg</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Dogxtreme</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Dogxtreme-adulto-12.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">125</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Adultos</li>
+                            <li>Pollo con Arroz</li>
+                            <li>12kg</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Dogxtreme</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Dogxtreme-cachorro-12.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">115</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Cachorros</li>
+                            <li>Pollo con Arroz</li>
+                            <li>12kg</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Kong Cerdito</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Kong pig medium.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">40</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Razas pequeñas</li>
+                            <li>Jueguete de trapo</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Mpets Hueso</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Mpets juguete dental.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">25</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Razas medianas y adultas</li>
+                            <li>Juguete dental</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Kong Bola</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="./Foto/Comida/Kong wiggi bola.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">30</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Razas medianas y adultas</li>
+                            <li>Juegue de plastico</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Fin Fotos Comida-->
+
+<!--inicio Ejecutor-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="scripts.js" ></script>
+<script src="carrito.js" ></script>
+<script src="pedido.js" ></script>
 </body>
+<!--Fin Ejecutor-->
+
+<!--inicio Footer-->
+<footer>
+	<div class="container-full" id="contacto">
+		<div class="container-body">
+			<div class="colum1">
+				<h1>Nuestra empresa</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, hic corrupti debitis, aliquid, quam doloribus facere.</p>
+				<h1>Libro de reclamaciones</h1>
+				<img src="./Foto/reclamaciones.png" alt="" width="100px" class="reclamaciones" ><label for=""></label>
+			</div>
+			<div class="colum2">
+				<h1>Siguenos en nuestra redes</h1>
+				<div class="row">
+					<img src="./Foto/facebook.png" alt=""><label for="">Siguenos en Facebook</label>
+				</div>
+				<div class="row">
+					<img src="./Foto/twitter.png" alt=""><label for="">Siguenos en Twitter</label>
+				</div>
+				<div class="row">
+					<img src="./Foto/instagram.png" alt=""><label for="">Siguenos en Instagram</label>
+				</div>
+			</div>
+			<div class="colum3">
+				<h1>Informacion de contacto</h1>
+				<div class="row2"><img src="./Foto/house.png" alt=""><label for="">calle falsa 123</label></div>
+				<div class="row2"><img src="./Foto/smartphone.png" alt=""><label for="">+51 992862170</label></div>
+				<div class="row2"><img src="./Foto/contact.png" alt=""><label for="">Fullpetsfood@gmail.com</label></div>
+			</div>
+		</div>
+	</div>
+	<div class="container-footer">
+		<div class="footer">
+			<div class="copyright"> © 2021 todos los derechos reservados | <a >Diego Principe</a> </div>
+			<div class="information"><a href="">Informacion Compañia</a> | <a href="">Politica de Privacidad</a> | <a href="">Terminos y Condiciones</a> </div>
+		</div>
+	</div>	
+</footer>
+<!--Fin Footer-->
+</html>

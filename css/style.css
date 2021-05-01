@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Indie Flower', cursive;
-    font-weight: bold;
+    font-family: 'Montserrat';
 }
 body{
     background:white;
@@ -19,6 +18,7 @@ body{
     background-color: #fcc314;
     padding: 0 1rem 0 1rem;
     z-index: 2;
+    font-weight: bold;
 }
 .contenedor{
     width: 100%;
@@ -26,8 +26,11 @@ body{
     display: inline-flex;
     padding: 0 20px 0 20px;
 }
+.fa-bars{
+    font-size: 25px;
+    margin: 0 10px 0 0;
+}
 .contenedor .btn-menu, .logo{
-    float: left;
     line-height:80px;
 }
 .contenedor .btn-menu label{
@@ -45,6 +48,70 @@ body{
     transition: all ease;
     border-bottom: 2px solid transparent;
     font-size: 18px;
+}
+.contenedor .menu .table{
+    margin-bottom: 0;
+}
+.contenedor .menu .table th{
+    padding: 0 12px 0 12px;
+}
+.table td, .table th {
+    padding: 5px;
+    line-height: 30px;
+}
+.contenedor .menu span{
+    font-weight: bold;
+}
+@media screen and (max-width:576px){
+    .contenedor .menu span{
+    font-size: 0mm;
+    }
+}
+.contenedor .menu .fas{
+    font-size: 22px;
+
+}
+.dropdown-menu{
+    padding: 0;
+}
+.dropdown-menu .head-dropdown{
+    background-color:#DCDCDC;
+    text-align: center;
+}
+.dropdown-menu .body-dropdown{
+    text-align: center;
+}
+.dropdown-menu .foot-dropdown{
+    text-align: center;
+    border: none !important;
+    font-weight: bold;
+}
+.contenedor .menu .btn-secondary{
+    background:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    line-height: none;
+    border-color: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #5e5342;
+}
+.contenedor .menu .dropdown-item{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin: auto;
+}
+.contenedor .menu .foot-dropdown{
+    background:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    line-height: none;
+    border-color: none;
+    box-shadow: none;
+    border-radius: 0;
 }
 .contenedor .menu a:hover{
     border-bottom: 2px solid #5e5342;
@@ -66,6 +133,13 @@ body{
     outline: none;
     border: 1px solid silver;
     border-radius: 60px;
+    font-weight: bold;
+}
+@media screen and (max-width:576px){
+    .box .src{
+        width: 180px;
+        height: 35px;
+    }
 }
 .box .srcb{
     width: 70px;
@@ -90,7 +164,7 @@ body{
     width: 100%;
     height: 0vh;
     top: 80px;left: 0;
-    transition: all ease;
+    transition: all ease .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 2;
@@ -98,6 +172,7 @@ body{
 #btn-menu:checked ~ .container-menu{
     opacity: 1;
     visibility: visible;
+    
 }
 .cont-menu{
     width: 100%;
@@ -105,8 +180,9 @@ body{
     background: #fcc314;
     height: 100vh;
     position: relative;
-    transition: all ease;
+    transition: all ease .5s;
     transform: translateX(-100%);
+    font-weight: bold;
 }
 #btn-menu:checked ~ .container-menu .cont-menu{
     transform: translateX(0%);
@@ -142,12 +218,16 @@ body{
     width: 100vw;
     height: 35vh;
 }
+.carousel-indicators{
+    z-index: 1;
+}
 /*Fin de Slider Promociones*/
 
 /*Slider Seleccion Mascota*/
 .titulomascota {
     font-size: 27px;
     text-align:center;
+    margin: 25px;
 }
 .card-deck {
     width: 80%;
@@ -167,6 +247,7 @@ body{
 .titulomarca {
     font-size: 27px;
     text-align:center;
+    margin: 25px;
 }
 .select-marc {
     width: 100%;
@@ -254,39 +335,83 @@ body{
 
 /*Inicio Nosotros*/
 .nosotros{
-    color: teal;
-    text-align:center;
-    padding-top: 100px;
-}
-.texto{
-    color: darkblue;
-    text-align: justify;
-    width: 1000px;
     margin: auto;
-    padding: 60px;
+    width: 65vw;
+    display: block;
 }
-.texto img{
-    width: 300px;
-}
-.misyvis{
-    color: darkgreen;
+.nosotros-titulo{
+    font-weight: bold;
+    font-size: 30px;
     text-align: center;
-    font-style:initial;
+    margin: 25px 0 25px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nosotros-parrafo{
+    font-weight: bold;
+    font-size: 24px;
+    width: 70%;
+    margin-bottom: 9px;
+}
+.nosotros p{
+    font-size: 18px;
+}
+.nosotros img{
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+@media screen and (max-width:715px){
+    .nosotros img{
+        max-width: 250px;
     }
+}
 /*Fin de Nosotros*/
+
+/*Inicio FQ*/
+.faq{
+    margin: auto;
+    width: 65vw;
+    display: block;
+}
+.faq-titulo{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.faq-parrafo{
+    font-weight: bold;
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.faq p{
+    font-size: 18px;
+}
+.faq-final{
+    padding-bottom: 65px;
+}
+.sangria{
+    text-indent: 40px
+}
+/*Fin de FQ*/
 
 /*Inicio Footer*/
 footer{
     width: 100%;
-    background: rgb(0,45,98);
-    background: linear-gradient(90deg, rgba(0,45,98,1) 0%, rgba(0,48,143,1) 50%, rgba(0,127,255,1) 100%);
+    background:lightslategrey;
     color: #fff;
 }
 .container-full{
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 40px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container-body{
     display: flex;
@@ -300,7 +425,12 @@ footer{
 }
 .colum1 p{
     font-size: 14px;
-    color: #c7c7c7;
+    color: #fff;
+    margin-top: 20px;
+}
+.colum1 .reclamaciones{
+    display: block;
+    margin: auto;
     margin-top: 20px;
 }
 .colum2{
@@ -320,7 +450,7 @@ footer{
 .row label{
     margin-top: 10px;
     margin-left: 10px;
-    color: #c7c7c7;
+    color: #fff;
 }
 .colum3 {
     max-width: 400px;
@@ -376,4 +506,169 @@ footer{
         margin-top: 40px;
     }
 }
+.margincompra{
+    margin-bottom: 300px;
+}
 /*Fin de Footer*/
+
+/*Inicio Menú navegacion*/
+.list-group{
+    width: 0vw;
+    z-index: 0;
+}
+@media screen and (max-width:715px){
+    .list-group{
+    width: 100vw;
+    }
+}
+/*Fin Menú navegacion*/
+
+/*Inicio mapas*/
+.list-group{
+    width: 0vw;
+    z-index: 0;
+}
+@media screen and (max-width:715px){
+    .list-group{
+    width: 100vw;
+    }
+}
+/*Fin mapas*/
+
+/*Inicio registro*/
+.form-box{
+    width: 450px;
+    height: 650px;
+    position: relative;
+    margin: 6% auto;
+    background:azure;
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 300px;
+    margin: 35px auto;
+    position: relative;
+}
+.button-box .ing-pos{
+    padding-left: 40px;
+}
+.button-box .reg-pos{
+    padding-left: 38px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #5e5342;
+    font-weight: bold;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    border-bottom: 2px solid #5e5342;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    position: absolute;
+    width: 430px;
+    height: 550px;
+    transition: 0.5s;
+}
+.principal-login{
+    height: 500px;
+    align-items: center;
+}
+.principal-login img{
+    margin-left: 50px;
+}
+.principal-login a{
+    color: #5e5342;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+}
+.input-field{
+    width: 100%;
+    height: 50px;
+    padding: 6px 8px 6px 8px;
+    margin: 5px 0;
+    outline: none;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+    width: 100%;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #1a73e8;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.chech-box{
+    margin: 3px 10px 0px 0;
+}
+.chech-box span{
+    color: #777;
+    font-size: 14px;
+    bottom: 100px;
+    position: absolute;
+}
+#login{
+    left: 8px;
+}
+#register{
+    left: 550px;
+}
+/*Fin registro*/
+
+/*Inicio Alerta*/
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+/*Fin Alerta*/
+.card-body img{
+    width: 220px;
+}
