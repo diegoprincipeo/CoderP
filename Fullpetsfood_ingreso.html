@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Fullpetsfood</title>
+	<link rel="shortcut icon" href="./Foto/Logo-pestaña.png">
+	<title>Registro|Fullpetsfood</title>
+	<meta name="Description" content="Venta de comida para perros, gatos, aves, roedores y reptiles. Encuentra comida, antipulgas, arena, juguetes y collares. Compra Mimascot, Dogxtreme, Purina, Hill´s y mas">
+	<meta name="keywords" content="Alimento,perro,gato,ave,reptil,roedor,comida,juguete,lima">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,81 +16,82 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--Inicio Encabezado-->
-<header class="header">
-	<div class="contenedor">
-		<div class="btn-menu" type="button">
-			<label for="btn-menu"><i class="fas fa-bars"></i></label>
-		</div>
-		<div class="logo">
-		<a href="index.html"><img src="Foto/Logo2.png" width="120px" alt=""></a>
-		</div>
-		<div class="box"> 
-			<input type="text" name="Buscar" placeholder="Busca tu comida favorita" class="src" autocomplete="off">
-			<input type="submit" value="Buscar" class="srcb">
-		</div>
-		<nav class="menu dropdown d-flex justify-content-around">
-			<div>
-				<a href="Fullpetsfood_ingreso.html" data-toggle="tooltip" data-placement="top"><i class="fas fa-user-circle"></i><span>  Mi Cuenta</span></a>
-			</div>
-			<div>
-				<a href="#" type="button" class="btn btn-secondary dropdown-toggle shadow-none bg-transparent" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="top"><i class="fas fa-shopping-basket"></i><span>  Carrito</span></a>
-				<div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-					<table id="lista-carrito" class="table">
-						<thead>
-							<tr>
-								<th>Imagen</th>
-								<th>Nombre</th>
-								<th>Precio</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody></tbody>
-					</table>
-					<a href="#" id="procesar-pedido" class="dropdown-item">Procesar Compra</a>
-					<a href="#" id="vaciar-carrito" class="dropdown-item">Vaciar Carrito</a>
-				</div>
-			</div>
-			<div>
-				<a href="#" type="button" class="btn btn-secondary dropdown-toggle shadow-none bg-transparent" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="top"><i class="fas fa-phone-alt"></i><span>  Contactanos</span></a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item body-dropdown" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/whatsapp-brands.svg" alt="" width="22px"> +51 992862170</a>
-					<a class="dropdown-item body-dropdown" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/envelope-regular.svg" alt="" width="22px"> Fullpetsfood@gmail.com</a>
-					<a class="dropdown-item foot-dropdown">Lunes a sábado 9am-8pm</a>
-					<a class="dropdown-item foot-dropdown">Domingo 9am-2pm</a>
-				</div>
-			</div>
-			<div>
-				<a href="#" type="button" class="btn btn-secondary dropdown-toggle shadow-none bg-transparent" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="top"><i class="fas fa-store-alt"></i><span>  Tiendas</span></a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item head-dropdown" href="Fullpetsfood_zonadereparto.html"><strong>Ver Mapa</strong></a>
-					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Gotica</a>
-					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Metropolis</a>
-					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Central</a>
-					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Costa Oeste</a>
-					<a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Estrella</a>
-				</div>
-			</div>
-		</nav>
-	</div>
-</header>
-<!--Fin Encabezado-->
 
-<!--Inicio Menú lateral-->
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-<div class="cont-menu">
-	<nav>
-		<a href="index.html#titulomarca">Marcas</a>
-		<a href="Fullpetsfood_Perro.html">Promociones</a>
-		<a href="Fullpetsfoos_Nosotros.html">Nosotros</a>
-		<a href="Fullpetsfood_zonadereparto.html">Zona de reparto</a>
-		<a href="https://www.vozanimalperu.com/albergue">Ayuda Social</a>
-		<a href="Fullpetsfood_FAQ.html">Preguntas frecuentes</a>
-	</nav>
-</div>
-</div>
-<!--Fin Menú lateral-->
+<!--Inicio Encabezado-->
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #fcc314;">
+    <a class="navbar-brand" href="index.html"><img src="Foto/Logo3.png" width="180px" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <nav class="menu dropdown d-flex justify-content-between">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i><span>  Mi Cuenta</span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item no-text" href="Fullpetsfood_ingreso.html">Iniciar Sesion</a>
+                        <a class="dropdown-item no-text" href="Fullpetsfood_ingreso.html">Registrate</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-basket"></i><span>  Carrito</span></a>
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th class="no-text">Imagen</th>
+                                    <th class="no-text">Nombre</th>
+                                    <th class="no-text">Precio</th>
+                                    <th class="no-text"></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="procesar-pedido" class="dropdown-item no-text">Procesar Compra</a>
+                        <a href="#" id="vaciar-carrito" class="dropdown-item no-text">Vaciar Carrito</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-phone-alt"></i><span>  Contactanos</span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item body-dropdown no-text" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/whatsapp-brands.svg" alt="" width="22px"> +51 992862170</a>
+                        <a class="dropdown-item body-dropdown no-text" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/envelope-regular.svg" alt="" width="22px"> Fullpetsfood@gmail.com</a>
+                        <a class="dropdown-item foot-dropdown no-text">Lunes a sábado 9am-8pm</a>
+                        <a class="dropdown-item foot-dropdown no-text">Domingo 9am-2pm</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-store-alt"></i><span>  Tiendas</span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item head-dropdown no-text" href="Fullpetsfood_zonadereparto.html"><strong>Ver Mapa</strong></a>
+                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Ciudad Gotica</a>
+                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Metropolis</a>
+                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Ciudad Central</a>
+                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Costa Oeste</a>
+                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Ciudad Estrella</a>
+                    </div>
+                </li>
+            </nav>
+        </ul>
+		<form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Busca tu marca favorita">
+            <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Buscar</button>
+        </form>
+    </div>
+</nav>
+    <div class="nav-scroller shadow-sm" style="background-color: #fcc314;">
+        <nav class="nav nav-underline d-flex justify-content-center">
+            <a class="nav-link no-text" href="Fullpetsfood_Perro.html">Perros</a>
+            <a class="nav-link no-text" href="Fullpetsfood_Gato.html">Gatos</a>
+            <a class="nav-link no-text" href="Fullpetsfood_Otras_mascotas.html">Otras Mascotas</a>
+            <a class="nav-link no-text" href="Fullpetsfoos_Nosotros.html">Nosotros</a>
+            <a class="nav-link no-text" href="https://www.vozanimalperu.com/albergue">Ayuda Social</a>
+            <a class="nav-link no-text" href="Fullpetsfood_FAQ.html">Preguntas frecuentes</a>
+        </nav>
+    </div>
+<!--Fin Encabezado-->
 
 <!--inicio Registro-->
 

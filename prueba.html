@@ -16,79 +16,77 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <!--Inicio Encabezado-->
-
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #fcc314;">
-    <a class="navbar-brand" href="index.html"><img src="Foto/Logo3.png" width="180px" alt=""></a>
+    <a class="navbar-brand" href="#"><img src="Foto/Logo3.png" width="180px" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Busca tu marca favorita">
+            <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Buscar</button>
+        </form>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <nav class="menu dropdown d-flex justify-content-between">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i><span>  Mi Cuenta</span></a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i><span>  Mi Cuenta</span></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item no-text" href="Fullpetsfood_ingreso.html">Iniciar Sesion</a>
-                        <a class="dropdown-item no-text" href="Fullpetsfood_ingreso.html">Registrate</a>
+                        <a class="dropdown-item" href="Fullpetsfood_ingreso.html">Iniciar Sesion</a>
+                        <a class="dropdown-item" href="Fullpetsfood_ingreso.html">Registrate</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-basket"></i><span>  Carrito</span></a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-basket"></i><span>  Carrito</span></a>
                     <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
                         <table id="lista-carrito" class="table">
                             <thead>
                                 <tr>
-                                    <th class="no-text">Imagen</th>
-                                    <th class="no-text">Nombre</th>
-                                    <th class="no-text">Precio</th>
-                                    <th class="no-text"></th>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
                         </table>
-                        <a href="#" id="procesar-pedido" class="dropdown-item no-text">Procesar Compra</a>
-                        <a href="#" id="vaciar-carrito" class="dropdown-item no-text">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="dropdown-item">Procesar Compra</a>
+                        <a href="#" id="vaciar-carrito" class="dropdown-item">Vaciar Carrito</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-phone-alt"></i><span>  Contactanos</span></a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-phone-alt"></i><span>  Contactanos</span></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item body-dropdown no-text" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/whatsapp-brands.svg" alt="" width="22px"> +51 992862170</a>
-                        <a class="dropdown-item body-dropdown no-text" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/envelope-regular.svg" alt="" width="22px"> Fullpetsfood@gmail.com</a>
-                        <a class="dropdown-item foot-dropdown no-text">Lunes a sábado 9am-8pm</a>
-                        <a class="dropdown-item foot-dropdown no-text">Domingo 9am-2pm</a>
+                        <a class="dropdown-item body-dropdown" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/whatsapp-brands.svg" alt="" width="22px"> +51 992862170</a>
+                        <a class="dropdown-item body-dropdown" href="Fullpetsfood_zonadereparto.html"><img src="./Foto/envelope-regular.svg" alt="" width="22px"> Fullpetsfood@gmail.com</a>
+                        <a class="dropdown-item foot-dropdown">Lunes a sábado 9am-8pm</a>
+                        <a class="dropdown-item foot-dropdown">Domingo 9am-2pm</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle no-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-store-alt"></i><span>  Tiendas</span></a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-store-alt"></i><span>  Tiendas</span></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item head-dropdown no-text" href="Fullpetsfood_zonadereparto.html"><strong>Ver Mapa</strong></a>
-                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Ciudad Gotica</a>
-                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Metropolis</a>
-                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Ciudad Central</a>
-                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Costa Oeste</a>
-                        <a class="dropdown-item no-text" href="Fullpetsfood_zonadereparto.html">Ciudad Estrella</a>
+                        <a class="dropdown-item head-dropdown" href="Fullpetsfood_zonadereparto.html"><strong>Ver Mapa</strong></a>
+                        <a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Gotica</a>
+                        <a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Metropolis</a>
+                        <a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Central</a>
+                        <a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Costa Oeste</a>
+                        <a class="dropdown-item" href="Fullpetsfood_zonadereparto.html">Ciudad Estrella</a>
                     </div>
                 </li>
             </nav>
         </ul>
-		<form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Busca tu marca favorita">
-            <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Buscar</button>
-        </form>
     </div>
-</nav>
+  </nav>
     <div class="nav-scroller shadow-sm" style="background-color: #fcc314;">
-        <nav class="nav nav-underline d-flex justify-content-center">
-            <a class="nav-link no-text" href="Fullpetsfood_Perro.html">Perros</a>
-            <a class="nav-link no-text" href="Fullpetsfood_Gato.html">Gatos</a>
-            <a class="nav-link no-text" href="Fullpetsfood_Otras_mascotas.html">Otras Mascotas</a>
-            <a class="nav-link no-text" href="Fullpetsfoos_Nosotros.html">Nosotros</a>
-            <a class="nav-link no-text" href="https://www.vozanimalperu.com/albergue">Ayuda Social</a>
-            <a class="nav-link no-text" href="Fullpetsfood_FAQ.html">Preguntas frecuentes</a>
+        <nav class="nav nav-underline d-flex justify-content-around">
+            <a class="nav-link" href="Fullpetsfood_Perro.html">Perros</a>
+            <a class="nav-link" href="Fullpetsfood_Gato.html">Gatos</a>
+            <a class="nav-link" href="Fullpetsfood_Otras_mascotas.html">Otras Mascotas</a>
+            <a class="nav-link" href="Fullpetsfoos_Nosotros.html">Nosotros</a>
+            <a class="nav-link" href="https://www.vozanimalperu.com/albergue">Ayuda Social</a>
+            <a class="nav-link" href="Fullpetsfood_FAQ.html">Preguntas frecuentes</a>
         </nav>
     </div>
 <!--Fin Encabezado-->
@@ -133,10 +131,10 @@
 <!--Fin Sliders-->
 
 <!--Inicio Selecion Mascota-->
-<h1 class="titulomascota">Tipo de Mascota</h1>
-<div class="card-deck card-mascota">
+<h1 class="titulomascota">Full Pets Food</h1>
+<div class="card-deck">
   <div class="card">
-    <a href="./Fullpetsfood_Perro.html"><img src="./Foto/Perro.jpg" class="card-img-top" alt=""></a>
+    <a href="./Fullpetsfood_Perro.html"><img src="./Foto/Perro" class="card-img-top" alt=""></a>
     <div class="card-body">
       <h5 class="card-title font-weight-bold">Productos para Perros</h5>
       <p class="card-text font-weight-normal">Aqui encontraras las mejores marcas de comida para perros segun su tamaño y raza, asi como juguetes y productos de higiene.</p>
@@ -146,7 +144,7 @@
     </div>
   </div>
   <div class="card">
-    <a href="./Fullpetsfood_Gato.html"><img src="./Foto/Gato.jpg" class="card-img-top" alt=""></a>
+    <a href="./Fullpetsfood_Gato.html"><img src="./Foto/Gato" class="card-img-top" alt=""></a>
     <div class="card-body">
       <h5 class="card-title font-weight-bold">Productos para Gatos</h5>
       <p class="card-text font-weight-normal">Te daremos las mejores marcas para la alimentacion, asi como arena para gatos, juguetes, accesoriso, productos de aseo e higiene.</p>
@@ -156,7 +154,7 @@
     </div>
   </div>
   <div class="card">
-    <a href="./Fullpetsfood_Otras_mascotas.html"><img src="./Foto/Otras Mascotas2.jpg" class="card-img-top" alt=""></a>
+    <a href="./Fullpetsfood_Otras_mascotas.html"><img src="./Foto/Otras Mascotas" class="card-img-top" alt=""></a>
     <div class="card-body">
       <h5 class="card-title font-weight-bold">Productos para Otras Mascotas</h5>
       <p class="card-text font-weight-normal">Aqui encontraras comida, juguetes y utiles de aseo para Roedores, Aves y Reptiles, asi como algunos productos de higiene y aseo.</p>
@@ -169,54 +167,48 @@
 <!--Fin Selecion Mascota-->
 
 <!--Inicio Selecion Marcas-->
-
 <h1 class="titulomarca" id="titulomarca">Las Marcas que ellos aman</h1>
 <div class="select-marc">
-	<ul class="nav nav-tabs" id="myTab" role="tablist">
-		<li class="nav-item" role="presentation">
-		<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Perros</a>
-		</li>
-		<li class="nav-item" role="presentation">
-		<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Gatos</a>
-		</li>
-		<li class="nav-item" role="presentation">
-		<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Otras Mascotas</a>
-		</li>
-	</ul>
-		<div class="tab-content" id="myTabContent">
-			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp1.jpg" alt=""></a>
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp2.jpg" alt=""></a>
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp3.jpg" alt=""></a>
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp4.jpg" alt=""></a>
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp5.jpg" alt=""></a>
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp6.jpg" alt=""></a>
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp7.jpg" alt=""></a>
-				<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp8.jpg" alt=""></a>
-			</div>
-			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg1.jpg" alt=""></a>
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg2.jpg" alt=""></a>
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg3.jpg" alt=""></a>
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg4.jpg" alt=""></a>
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg5.jpg" alt=""></a>
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg6.jpg" alt=""></a>
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg7.jpg" alt=""></a>
-				<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg8.jpg" alt=""></a>
-			</div>
-			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom1.jpg" alt=""></a>
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom2.jpg" alt=""></a>
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom3.jpg" alt=""></a>
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom4.jpg" alt=""></a>
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom5.jpg" alt=""></a>
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom6.jpg" alt=""></a>
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom7.jpg" alt=""></a>
-				<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom8.jpg" alt=""></a>
-			</div>
-		</div>
+	<div class="select-brand">
+		<h1>Perros🐕</h1>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp1.jpg" alt=""></a>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp2.jpg" alt=""></a>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp3.jpg" alt=""></a>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp4.jpg" alt=""></a>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp5.jpg" alt=""></a>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp6.jpg" alt=""></a>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp7.jpg" alt=""></a>
+		<a href="Fullpetsfood_Perro.html"><img src="Foto/marcp8.jpg" alt=""></a>
+	</div>
 </div>
-<!--Fin Marcas-->
+<div class="select-marc">
+	<div class="select-brand">
+		<h1>Gatos🐈</h1>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg1.jpg" alt=""></a>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg2.jpg" alt=""></a>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg3.jpg" alt=""></a>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg4.jpg" alt=""></a>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg5.jpg" alt=""></a>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg6.jpg" alt=""></a>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg7.jpg" alt=""></a>
+		<a href="Fullpetsfood_Gato.html"><img src="Foto/marcg8.jpg" alt=""></a>
+	</div>
+</div>
+<div class="select-marc">
+		<div class="select-brand">
+		<h1>🦎🐇Otras Mascotas🐦🐟</h1>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom1.jpg" alt=""></a>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom2.jpg" alt=""></a>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom3.jpg" alt=""></a>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom4.jpg" alt=""></a>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom5.jpg" alt=""></a>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom6.jpg" alt=""></a>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom7.jpg" alt=""></a>
+		<a href="Fullpetsfood_Otras_mascotas.html"><img src="Foto/marcom8.jpg" alt=""></a>
+	</div>
+</div>
+</div>
+<!--Fin Sliders-->
 
 <!--inicio Ejecutor-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
