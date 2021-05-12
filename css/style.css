@@ -62,16 +62,13 @@ body{
     text-align:center;
     margin: 25px;
 }
-.card-mascota .card-deck {
-    width: 90%;
-    text-align: justify;
+.card-mascota{
+    width: 70%;
     margin: auto;
+    text-align: center;
 }
-@media (min-width: 576px){
-.card-deck {
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
+.card-mascota p{
+    text-align: justify;
 }
 .card-mascota .card img{
     width: 100%;
